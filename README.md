@@ -36,16 +36,16 @@ CONSIGNAS:
   Cantidad de contenido total según el rating dado por las reseñas de los usuarios. (función: get:contents(rating)).
 
 3. Hacer un Deployment de la API del punto 2:
-  El deployment del sistema de recomendación está en https://github.com/bigtimingme/MLOps_09
+  El deployment del sistema de recomendación está en https://proyecto-mlops-09.onrender.com/
 
 4. Análisis exploratorio de los datos: (Exploratory Data Analysis-EDA):
   No encontré relaciones interesantes, salvo que el promedio de reseñas está entre 3,3 y 3,8.
 
 5. Sistema de recomendación:
-El sistema de recomendación que creé es un sistema basado en la combinación de la columna title(título) y la columna listed_in(géneros). Usé luego CountVectorizer y cosine_similarity de la librería scikit-learn para crear una matrix de similitud.
+El sistema que creé es un sist. basado en la combinación de la columna title (título) y la columna listed_in(géneros). Usé luego CountVectorizer y cosine_similarity de la librería scikit-learn para crear una matrix de similitud.
 Al ser imperativo la inclusión del sistema de recomendación en el script de la API, creé una columna en el DataFrame de las consultas que se llama 'recommender' y puse los 5 títulos más recomendados en orden descendente para cada item.
 
 6. Video: 
   Hacer un video mostrando el resultado de las consultas propuestas y del modelo de ML entrenado.
-  link al video:
+  link al video: https://youtu.be/VnV2moT1Fhk
 
