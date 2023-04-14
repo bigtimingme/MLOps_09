@@ -36,7 +36,7 @@ CONSIGNAS:
   Cantidad de contenido total según el rating dado por las reseñas de los usuarios. (función: get:contents(rating)).
 
 3. Hacer un Deployment de la API del punto 2:
-  El deployment del sistema de recomendación está en https://github.com/bigtimingme/soyhenry-fastapi
+  El deployment del sistema de recomendación está en https://github.com/bigtimingme/MLOps_09
 
 4. Análisis exploratorio de los datos: (Exploratory Data Analysis-EDA):
   No encontré relaciones interesantes, salvo que el promedio de reseñas está entre 3,3 y 3,8.
