@@ -66,8 +66,8 @@ async def products_per_country(country:str,year:int,content:str):
     return {f'cantidad de películas de {country} en el year {year} del tipo {content} es: {a}'}
 
 @app.get('/get_contents')
-async def get_contents(rating):
-    contenido = len(total_df[total_df['scored']==rating])
+async def get_contents(rating:float):
+    contenido = len(total_df[total_df['scored'] == rating])
     return {f'Cantidad de contenido con puntaje {rating} es: {contenido}'}
 
 @app.get('/recommender')

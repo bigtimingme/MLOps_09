@@ -3,40 +3,37 @@ PROYECTO INDIVIDUAL Nº1
 Machine Learning Operations (MLOps)
 
 Alumno: Francisco Jiménez de Aréchaga
-github: bigtimingme
+Cuenta Github: bigtimingme
+Repositorio: MLOps_09
 
 CONSIGNAS:
 
-1. Hacer las siguientes transformaciones a los archivos csv de las plataformas de streaming:
+1. Hacer las siguientes transformaciones a los archivos csv de las plataformas de streaming (realizado en el archivo ETL.ipynb):
 
-  Generar campo id: Cada id se compondrá de la primera letra del nombre de la plataforma, seguido del show_id ya presente en los datasets (ejemplo para títulos de Amazon = as123)
+  Generar campo id: Cada id se compondrá de la primera letra del nombre de la plataforma, seguido del show_id ya presente en los datasets (ejemplo para títulos de Amazon = as123).
 
-  Los valores nulos del campo rating deberán reemplazarse por el string “G” (corresponde al maturity rating: “general for all audiences”)
+  Los valores nulos del campo rating deberán reemplazarse por el string “G” (corresponde al maturity rating: “general for all audiences”).
 
-  De haber fechas, deberán tener el formato AAAA-mm-dd
+  De haber fechas, deberán tener el formato AAAA-mm-dd.
 
-  Los campos de texto deberán estar en minúsculas, sin excepciones
+  Los campos de texto deberán estar en minúsculas, sin excepciones.
 
-  El campo duration debe convertirse en dos campos: duration_int y duration_type. El primero será un integer y el segundo un string indicando la unidad de medición de duración: min (minutos) o season (temporadas)
-
-El punto 1 de las consignas está realizado en el archivo proyecto_machine_learning.ipynb
+  El campo duration debe convertirse en dos campos: duration_int y duration_type. El primero será un integer y el segundo un string indicando la unidad de medición de duración: min (minutos) o season (temporadas).
 
 
-2. Desarrollar una API con las siguientes consultas:
+2. Desarrollar una API con las siguientes consultas (hecho en la carpeta soyhenry-fastapi):
 
-  Película con mayor duración con filtros AÑO, PLATAFORMA Y TIPO DE DURACIÓN. (función: get_max_duration(year, platform, duration_type))
+  Película con mayor duración con filtros AÑO, PLATAFORMA Y TIPO DE DURACIÓN. (función: get_max_duration(year, platform, duration_type)).
 
-  Cantidad de películas por plataforma con un puntaje mayor a XX en determinado año (función: get_score_count(platform, scored, year))
+  Cantidad de películas por plataforma con un puntaje mayor a XX en determinado año (función: get_score_count(platform, scored, year)).
 
-  Cantidad de películas por plataforma con filtro de PLATAFORMA. (función: get_count_platform(platform))
+  Cantidad de películas por plataforma con filtro de PLATAFORMA. (función: get_count_platform(platform)).
 
-  Actor que más se repite según plataforma y año. (función: get_actor(platform, year))
+  Actor que más se repite según plataforma y año. (función: get_actor(platform, year)).
 
-  Cantidad de contenido por que se produció en un determinado país en un año. (función: prod_per_country(type,country,year))
+  Cantidad de contenido por que se produció en un determinado país en un año. (función: prod_per_country(type,country,year)).
 
-  Cantidad de contenido total según el rating dado por las reseñas de los usuarios. (función: get:contents(rating))
-
-  El punto 2 está llevado a cabo en el submódulo del repositorio github llamado soyhenry-fastapi. Armé un submódulo en Github porque sino iba a duplicar informacíon y ya tenía hecho el repositorio https://github.com/bigtimingme/soyhenry-fastapi
+  Cantidad de contenido total según el rating dado por las reseñas de los usuarios. (función: get:contents(rating)).
 
 3. Hacer un Deployment de la API del punto 2:
   El deployment del sistema de recomendación está en https://github.com/bigtimingme/soyhenry-fastapi
